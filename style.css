@@ -1,0 +1,10 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+:root {
+  --text-color: black;
+  --btn-color: #0065FC;
+  --bg-hover-color: #DEEBFF;
+  --bg-bloc: #D9D9D9;
+}
