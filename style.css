@@ -686,7 +686,7 @@ button {
 
 .article-card--accomodation {
   min-width: 246px;
-  width: 30%;
+  width: 27%;
   max-height: 199px;
   height: 199px;
 }
@@ -756,12 +756,12 @@ Aside main
 }
 
 .article-card--mostpopular {
-  width: 85%;
+  width: 78%;
   /* 343px; */
   height: 20%;
   /* 140px ; */
   position: relative;
-  margin-bottom: 12px;
+  margin-bottom: 28px;
   }
 
   .mostpopular--picture {
@@ -807,7 +807,10 @@ Aside main
   margin-top: 10px;
 }
 
-
+.aside__mostpopular article:last-child p:last-child {
+  margin-top: 38px;
+  margin-bottom: 0;
+}
 
 
 /*
@@ -817,7 +820,7 @@ Leisure section
 .bloc-section--leisure-activities {
   width: 1337px;
   height: 493px;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .section__leisure-activities {
