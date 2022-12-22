@@ -404,6 +404,7 @@ body {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: var(--margin-medium-left);
   font-family: var(--font-family);
 }
 
@@ -464,6 +465,7 @@ i {
   color: var(--bg-bloc);
 }
 
+
 /*
 - -
   - -
@@ -476,7 +478,6 @@ i {
   width: auto;
   height: 426px;
   position: relative;
-  padding-left: var(--margin-medium-left);
 }
 
 .Header__navbar {
@@ -639,7 +640,6 @@ button {
 
 .main {
   width: auto;
-  padding-left: var(--margin-medium-left);
   display: flex;
   flex-wrap: wrap;
 }
@@ -650,18 +650,19 @@ button {
   flex-direction: row;
 }
 
+/* Accomodation section */
+
 .accomodation--picture img, .mostpopular--picture img, .leisure--picture img {
   object-fit: cover;
 }
 
 .bloc-section--accomodation {
   display: flex;
-  height: 626px;
-  margin-bottom: 28px;
+  margin-bottom: 38px;
+  flex-wrap: wrap;
 }
 
 .section__accomodation {
-  margin-right: 40px;
   background-color: var(--bg-bloc);
   display: flex;
   flex: 2;
@@ -669,19 +670,27 @@ button {
   justify-content: space-evenly;
   align-content: space-evenly;
   border-radius: 2.8%;
+  margin-right: calc(5.5% - 30px);
+  padding: 0 10px;
 }
+
+.section__accomodation h2, .aside__mostpopular h2 {
+  height: 35px;
+  padding-top: 10px;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
 
 .section__accomodation h2 {
   display: inline-block;
-  width: 800px;
-  height: 20px;
-  padding-top: 10px;
+  flex-basis: 800px;
 }
 
 
 .article-card {
-  box-shadow: -0.8vw 1vh 14px -13px #aaaaaa;
-  border-radius: 15px 15px 17px 17px;
+  /* box-shadow: -0.8vw 1vh 14px -13px #aaaaaa;
+  border-radius: 15px 15px 17px 17px; */
 }
 
 .article-card--accomodation {
@@ -689,6 +698,7 @@ button {
   width: 27%;
   max-height: 199px;
   height: 199px;
+  margin: 15px 10px;
 }
 
 .accomodation--picture img {
@@ -739,34 +749,40 @@ Aside main
 }
 
 .aside__mostpopular h2 {
-  margin-top: 52px;
-  margin-bottom: 0;
   display: inline-block;
   width: auto;
-  height: 30px;
   justify-items: normal;
-  position: relative;
+}
+
+
+.aside__mostpopular > p {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 15px 0;
 }
 
 .chart-snippets i {
   color: var(--btn-color);
   font-size: medium;
-  padding-top: 35px;
   font-weight: 900;
 }
 
 .article-card--mostpopular {
-  width: 78%;
-  /* 343px; */
-  height: 20%;
-  /* 140px ; */
+  width: 27vw;
+  max-width: 343px;
+  height: 144px;
+  min-height: 20%;
   position: relative;
-  margin-bottom: 28px;
+  align-self: flex-start;
   }
 
   .mostpopular--picture {
-    width: 343px;
-    height: 140px;
+    max-width:343px;
+    width: 25vw;
+    min-height: 140px;
+    height: 98%;
     border: 4px solid white;
     background-color: white;
     border-radius: 17px;
@@ -775,10 +791,10 @@ Aside main
 }
 
 .mostpopular--picture img {
-  width: 132px;
-  /* 11.42vw; */
-  height: 136px;
-  /* 10.95vh; */
+  width: 10vw;
+  max-width:132px;
+  min-height: 136px;
+  height: 100%;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   border-bottom: 4px solid white;
@@ -786,8 +802,10 @@ Aside main
 }
 
 .mostpopular--container {
-  width: 200px;
-  height: 128px;
+  width: 15vw;
+  max-width: 200px;
+  min-height: 128px;
+  height: 100%;
   background-color: white;
 }
 
@@ -925,4 +943,82 @@ footer ul {
 
 .btn-filter:hover {
   background-color: var(--bg-hover-color);
+}
+
+
+
+
+
+
+/*
+- -
+  - -
+      Main - tablet
+  - -
+- -
+*/
+
+
+@media screen and (max-width: 992px) {
+
+  body {
+    max-width: 1024px;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5%;
+  }
+
+  .bloc-section, .bloc-section--leisure-activities {
+    width: 880px;
+  }
+
+/*
+accomodation section
+*/
+
+  .bloc-section--accomodation {
+    height: 957px;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+
+  .section__accomodation {
+    height: 626px;
+    justify-content: space-around;
+    margin-right: 0;
+    margin-bottom: 45px;
+  }
+
+  .article-card--accomodation
+
+
+/*
+most popular section
+*/
+
+.article-card--mostpopular {
+  width: 30%;
+  height: 144px;
+}
+
+.mostpopular--picture {
+  width: 0;
+}
+
+.mostpopular--picture img {
+  width: 106px;
+  height: 141px;
+}
+
+
+
+/*
+leisure section
+*/
+
+  .bloc-section--leisure-activities {
+    height: 331px;
+  }
+
 }
