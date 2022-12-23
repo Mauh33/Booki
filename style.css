@@ -693,7 +693,16 @@ button {
   border-radius: 15px 15px 17px 17px; */
 }
 
+.card__link--hover {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+
+
 .article-card--accomodation {
+  position: relative;
   min-width: 246px;
   width: 27%;
   max-height: 199px;
@@ -759,8 +768,8 @@ Aside main
   display: inline-block;
   width: 30px;
   height: 30px;
-  margin: 0;
-  padding: 15px 0;
+  margin-top: 50px;
+  margin-bottom: 0;
 }
 
 .chart-snippets i {
@@ -807,6 +816,9 @@ Aside main
   min-height: 128px;
   height: 100%;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .mostpopular--container h3, .mostpopular--container > p {
@@ -814,19 +826,11 @@ Aside main
 }
 
 .mostpopular--container h3 {
-  margin: 6% 2% 5% 0;
-}
-
-.mostpopular--container p:nth-child(2) {
-  padding-bottom: 5%;
-}
-
-.mostpopular--container p {
-  margin-top: 10px;
+  margin:0;
 }
 
 .aside__mostpopular article:last-child p:last-child {
-  margin-top: 38px;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -837,7 +841,6 @@ Leisure section
 
 .bloc-section--leisure-activities {
   width: 1337px;
-  height: 493px;
   margin-bottom: 80px;
 }
 
@@ -846,6 +849,7 @@ Leisure section
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  height: 493px;
 }
 
 .section__leisure-activities h2 {
@@ -855,6 +859,7 @@ Leisure section
 .article-card--leisure {
   width: 302px;
   height: 444px;
+  position: relative;
 }
 
 .leisure--picture img {
