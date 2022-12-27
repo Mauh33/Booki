@@ -658,8 +658,8 @@ button {
 
 .bloc-section--accomodation {
   display: flex;
-  margin-bottom: 38px;
   flex-wrap: wrap;
+  margin-bottom: 45px;
 }
 
 .section__accomodation {
@@ -689,8 +689,8 @@ button {
 
 
 .article-card {
-  /* box-shadow: -0.8vw 1vh 14px -13px #aaaaaa;
-  border-radius: 15px 15px 17px 17px; */
+  box-shadow: -0.8vw 1vh 14px -13px #aaaaaa;
+  border-radius: 15px 15px 17px 17px;
 }
 
 .card__link--hover {
@@ -789,9 +789,9 @@ Aside main
 
   .mostpopular--picture {
     max-width:343px;
-    width: 25vw;
+    width: 27vw;
     min-height: 140px;
-    height: 98%;
+    height: 100%;
     border: 4px solid white;
     background-color: white;
     border-radius: 17px;
@@ -806,12 +806,11 @@ Aside main
   height: 100%;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  border-bottom: 4px solid white;
   /* border-bottom: 3px solid white; */
 }
 
 .mostpopular--container {
-  width: 15vw;
+  width: 16vw;
   max-width: 200px;
   min-height: 128px;
   height: 100%;
@@ -840,52 +839,59 @@ Leisure section
 */
 
 .bloc-section--leisure-activities {
-  width: 1337px;
-  margin-bottom: 80px;
+  margin-bottom: 45px;
+  min-height: 550px;
 }
 
 .section__leisure-activities {
-  position: relative;
+  height: 100%;
   display: flex;
   justify-content: space-between;
+  align-content: baseline;
   flex-wrap: wrap;
-  height: 493px;
 }
 
 .section__leisure-activities h2 {
   flex-basis: 1200px;
+  height: 30px;
 }
 
 .article-card--leisure {
-  width: 302px;
-  height: 444px;
   position: relative;
+  max-width: 302px;
+    width: 21.3vw;
+    min-width: 182px;
+    max-height: 388px;
+    height: 44.3vh;
+    min-height: 211px;
+
+}
+
+
+.leisure--picture {
+  box-shadow: 1px 2px 12px -5px #aaaaaa;
+  border-radius: 6%;
 }
 
 .leisure--picture img {
-  width: 302px;
-  height: 388px;
-}
-
- .leisure--picture img {
+  max-width: 302px;
+  width: 100%;
+  max-height: 388px;
+  height: 44.3vh;
   border-top-left-radius: 6%;
   border-top-right-radius: 6%;
-}
-
-.article-card--leisure,
-.leisure--picture {
- border: hidden;
 }
 
 
 .leisure--container h3 {
   margin-left: 6%;
+  display: inline-block;
+  height: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0.5em;
 }
 
-.article-card--shadow2 {
-  box-shadow: 1px 2px 15px -5px #aaaaaa;
-  border-radius: 6%;
-}
 
 /*
 - -
@@ -964,7 +970,7 @@ footer ul {
 */
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
 
   body {
     max-width: 1024px;
