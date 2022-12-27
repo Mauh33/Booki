@@ -404,7 +404,8 @@ body {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: var(--margin-medium-left);
+  padding-left: 1.6vw;
+  padding-right: 1.6vw;
   font-family: var(--font-family);
 }
 
@@ -903,12 +904,12 @@ Leisure section
 
 
 .footer {
-  width: 1339px;
+  max-width: 1339px;
+  width: ;
   height: 225px;
   margin: auto;
   background-color: var(--bg-bloc);
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 }
@@ -920,8 +921,8 @@ Leisure section
 }
 
 footer ul {
-  width: 300px;
-  height: 150px;
+  max-width: 300px;
+  max-height: 150px;
   line-height: 2em;
 }
 
