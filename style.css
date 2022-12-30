@@ -978,8 +978,22 @@ footer ul {
     width:100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 5%;
   }
+
+
+  /*
+  Header
+  */
+
+  .Header__filter {
+    width: unset;
+  }
+
+
+
+/*
+Main
+*/
 
   .bloc-section, .bloc-section--leisure-activities {
     width: 880px;
@@ -990,47 +1004,129 @@ accomodation section
 */
 
   .bloc-section--accomodation {
-    height: 957px;
+    min-height: 957px;
+    width: max-content;
     flex-direction: column;
     margin-bottom: 60px;
   }
 
   .section__accomodation {
-    height: 626px;
+    min-height: 626px;
     justify-content: space-around;
     margin-right: 0;
     margin-bottom: 45px;
+    flex: 2 2 40%;
   }
 
-  .article-card--accomodation
 
 
 /*
 most popular section
 */
 
+.aside__mostpopular {
+  max-height: 450px;
+  height: 35%;
+  min-height: 278px;
+  padding-bottom: 40px;
+  flex: 1 1 30%;
+  align-content: flex-start;
+}
+
+.aside__mostpopular h2 {
+  flex-basis: 660px;
+  display: inline-block;
+  height: 40px;
+  margin:  20px 0;
+}
+
+.aside__mostpopular > p {
+  margin: 35px 0 0 0;
+}
+
 .article-card--mostpopular {
-  width: 30%;
-  height: 144px;
+  min-width: 253px;
+  min-height: 144px;
+  max-width: 343px;
+  width: 253px;
+  min-height: 140px;
+  height: unset;
+  margin: 10px 1.5%;
 }
 
 .mostpopular--picture {
-  width: 0;
+  margin-right: 0;
+  max-width: 343px;
+  width: 253px;
+  min-height: 140px;
+  height: 100%;
 }
 
 .mostpopular--picture img {
-  width: 106px;
-  height: 141px;
+  width: 9.86vw;
+  max-width: 137px;
+  height: 26vh;
+  max-height: 142px;
 }
 
+.mostpopular--container {
+  width: 146px;
+  height: 144px;
+  max-width: unset;
+  max-height: unset;
+  justify-content: space-evenly;
+}
 
+.mostpopular--container > p {
+  margin: 0;
+}
 
 /*
 leisure section
 */
 
   .bloc-section--leisure-activities {
-    height: 331px;
+    max-width: 1000px;
+    width: auto;
+    height: auto;
+    min-height: unset;
+    margin-bottom: 60px;
+  }
+
+.section__leisure-activities {
+  width: auto;
+  justify-content: center;
+  align-content: flex-start;
+  height: 100%;
+}
+
+  .article-card--leisure {
+    height: 267px;
+    max-width: unset;
+    margin-bottom: 15vh;
+    margin-left: 2.6vw;
+    margin-right: 2.6vw;
+    max-width: 182px;
+    flex: 1 0 19%;
+    /* width: 182px; */
+  }
+
+  .article-card--leisure,
+  .leisure--picture img {
+    max-width: 334px;
+    height: 211px;
+  }
+
+  .leisure--picture img {
+    width: 100%;
+  }
+
+  .leisure--picture  {
+    width: unset;
+  }
+
+  .leisure--container h3 {
+    padding-top: 0.3em;
   }
 
 }
