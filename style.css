@@ -565,6 +565,18 @@ button {
   font-weight: 500;
 }
 
+button p {
+  margin: 0;
+  padding: 12px 0 0 0;
+  width: 90px;
+  height: 45px;
+  vertical-align: middle;
+}
+
+button div i {
+  visibility: hidden;
+}
+
 .Header__filter {
   display: flex;
   width: 1000px;
@@ -1108,7 +1120,6 @@ leisure section
     margin-right: 2.6vw;
     max-width: 182px;
     flex: 1 0 19%;
-    /* width: 182px; */
   }
 
   .article-card--leisure,
@@ -1128,5 +1139,155 @@ leisure section
   .leisure--container h3 {
     padding-top: 0.3em;
   }
+
+}
+
+
+
+
+
+
+
+/*
+- -
+  - -
+      Header - mobile
+  - -
+- -
+*/
+
+@media screen and (max-width:767px){
+
+  body {
+    padding-right: 0;
+    max-width: auto;
+    width: 100%;
+  }
+
+  .Header {
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .Header__navbar {
+    height: 180px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    margin-bottom: unset;
+  }
+
+  .logo {
+    position: relative;
+    left: 42%;
+    top: -40px;
+  }
+
+  .Header__menu {
+    width: 100%;
+  }
+
+  .menu--li {
+    position: relative;
+    /* padding-left: 7%;
+    padding-right: 7%; */
+    margin: unset;
+    display: inline-block;
+    width: 49%;
+  }
+
+
+/*
+      Header search
+*/
+
+h1 {
+  margin: 1em 0 0 3%;
+}
+
+.less-margin {
+  margin-top: revert;
+  margin-bottom: revert;
+  margin-left: 3%;
+}
+
+.form__location {
+  margin-left: 2%;
+}
+
+input {
+  width: 230px;
+}
+
+.btn__search {
+  width: 53px;
+}
+
+button p {
+  visibility: hidden;
+  position: relative;
+  left: 130%;
+}
+
+button div i {
+  display: inline-block;
+  position: relative;
+  top: -33px;
+  visibility: visible;
+}
+
+/*
+  header filter
+*/
+
+.Header__filter {
+  flex-wrap: wrap;
+  height: 200px;
+  align-content: start;
+  margin-bottom: unset;
+  flex-direction: column;
+}
+
+.Header__filter h2 {
+  margin-bottom: 0;
+}
+
+.Header__filter--choices {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.btn-filter {
+  width: 180px;
+  height: 55px;
+  border-radius: 27px;
+  margin-left: 3%;
+  padding-top: 14px;
+}
+
+.btn-filter:nth-child(2) {
+  width: 180px;
+}
+
+
+/*
+      Pseudo - class/elements
+*/
+
+.menu--li > a::after {
+  transform: none;
+  height: 0.23em;
+  top: 40px;
+  left: 0;
+  background-color: var(--bg-bloc);
+}
+
+.menu--li > a:hover::after {
+  transform: scale(1);
+  color: var(--btn-color);
+  background-color: var(--btn-color);
+}
+
 
 }
