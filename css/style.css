@@ -448,6 +448,10 @@ p {
   font-size: var(--font-sz-r);
 }
 
+a {
+  color: black;
+}
+
 .logo {
   width: 75px;
   height: 25px;
