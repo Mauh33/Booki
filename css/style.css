@@ -663,6 +663,10 @@ button span i {
   flex-direction: row;
 }
 
+article:hover {
+  transform: scale(1.03);
+}
+
 /* Accomodation section */
 
 .accomodation--picture img, .mostpopular--picture img, .leisure--picture img {
@@ -852,7 +856,7 @@ Leisure section
 */
 
 .bloc-section--leisure-activities {
-  margin-bottom: 45px;
+  margin-bottom: 15px;
   min-height: 550px;
 }
 
