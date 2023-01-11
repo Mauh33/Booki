@@ -407,6 +407,7 @@ body {
   padding-left: 1.6vw;
   padding-right: 1.6vw;
   font-family: var(--font-family);
+  overflow-x: hidden;
 }
 
 ul, li {
@@ -1531,7 +1532,7 @@ footer div {
 
 .bloc-section--accomodation {
   flex-direction: column-reverse;
-  min-height: none;
+  min-height: unset;
   margin-bottom: unset;
 }
 
@@ -1700,7 +1701,6 @@ footer div {
   width: auto;
   max-width: none;
   flex-direction: column;
-  justify-content: baseline;
 }
 
 footer div {
