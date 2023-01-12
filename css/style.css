@@ -1655,7 +1655,7 @@ footer div {
 }
 
 .article-card--leisure {
-  max-height: 190px;
+  max-height: unset;
   width: 90vw;
   flex: 2 1 100%;
   margin-bottom: 15px;
